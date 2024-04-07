@@ -1,10 +1,10 @@
 import { Meta, StoryObj } from '@storybook/react';
 import { storybookControls } from '../../styles';
-import { AppDisplay } from '../AppDisplay/index.ts';
-import { TextField } from '../TextField/index.ts';
+import { AppDisplay } from '../AppDisplay';
+import { TextField } from '../TextField';
 import { TypographyVariants } from '../Typography';
-import { VStack } from '../VStack/index.ts';
-import { Label } from './Label.tsx';
+import { VStack } from '../VStack';
+import { Label } from './Label';
 
 const meta: Meta<typeof Label> = {
   title: 'Primitive/Label',

@@ -1,7 +1,7 @@
 import { Meta, StoryObj } from '@storybook/react';
 import { storybookControls } from '../../styles';
 import { AppDisplay } from '../AppDisplay';
-import { Button } from './Button.tsx';
+import { Button } from './Button';
 
 const meta: Meta<typeof Button> = {
   title: 'Primitive/Button',

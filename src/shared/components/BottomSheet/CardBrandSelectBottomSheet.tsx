@@ -4,7 +4,7 @@ import { Button } from '../Button';
 import { Circle } from '../Circle';
 import { Typography } from '../Typography';
 import { VStack } from '../VStack';
-import { BottomSheet } from './BottomSheet.tsx';
+import { BottomSheet } from './BottomSheet';
 
 type CardBrandSelectBottomSheetProps = {
   onSubmit?: (submitResult: CardBrand) => void;

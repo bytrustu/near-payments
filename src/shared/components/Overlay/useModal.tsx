@@ -1,5 +1,5 @@
-import { OverlayContent, OverlayOption } from './Overlay.type.ts';
-import { useOverlay } from './OverlayProvider.tsx';
+import { OverlayContent, OverlayOption } from './Overlay.type';
+import { useOverlay } from './OverlayProvider';
 
 export const useModal = () => {
   const showOverlay = useOverlay();

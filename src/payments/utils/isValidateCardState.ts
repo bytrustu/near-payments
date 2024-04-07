@@ -1,6 +1,6 @@
 import { CardState } from '../types';
 import { cardValueSplitters } from './cardValueSplitters';
-import { isValidateCardModule } from './isValidateCardModule.ts';
+import { isValidateCardModule } from './isValidateCardModule';
 
 export const isValidateCardState = (card: {
   cardNumber: string;

@@ -1,6 +1,6 @@
 import type { Meta, StoryObj } from '@storybook/react';
 import { Typography } from '../Typography';
-import { AppDisplay } from './AppDisplay.tsx';
+import { AppDisplay } from './AppDisplay';
 
 const meta = {
   title: 'Components/AppDisplay',

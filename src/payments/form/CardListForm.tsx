@@ -1,4 +1,4 @@
-import Close from '../../assets/close.svg?react';
+import Close from '../../assets/close.png';
 import { AppDisplay, Button, Flex, HStack, Typography, useFunnel, VStack } from '../../shared';
 import { CardDisplay } from '../components/CardDisplay';
 import { CardPageIndex } from '../constants';
@@ -39,7 +39,7 @@ export const CardListForm = () => {
             보유 카드
           </Typography>
           <Button variant="ghost" onClick={moveCardPaymentForm}>
-            <Close width="32px" height="32px" />
+            <img src={Close} width="32px" height="32px" alt="닫기 아이콘" />
           </Button>
         </Flex>
       </AppDisplay.Header>

@@ -1,8 +1,8 @@
 import type { Meta, StoryObj } from '@storybook/react';
 import { letterSpacingValue, storybookControls, styleToken } from '../../styles';
 import { AppDisplay } from '../AppDisplay';
-import { TextField } from './TextField.tsx';
-import { TEXT_FIELD_VARIANTS } from './TextField.type.ts';
+import { TextField } from './TextField';
+import { TEXT_FIELD_VARIANTS } from './TextField.type';
 
 const FONT_SIZE = 18;
 const LETTER_SPACING = letterSpacingValue(FONT_SIZE, -8.5);

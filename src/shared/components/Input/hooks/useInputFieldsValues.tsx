@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import { forceNextTaskQueue } from '../../../utils';
-import { UpdateValueProps } from '../Input.type.ts';
+import { UpdateValueProps } from '../Input.type';
 
 const validateComplete = (values: string[], maxLength?: number) =>
   values.every(Boolean) && values.every((value) => value.length === maxLength);

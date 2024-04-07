@@ -1,6 +1,6 @@
 import type { Meta, StoryObj } from '@storybook/react';
 import { storybookControls, styleToken } from '../../styles';
-import { Stack } from './Stack.tsx';
+import { Stack } from './Stack';
 
 const meta: Meta = {
   title: 'Primitive/Stack',

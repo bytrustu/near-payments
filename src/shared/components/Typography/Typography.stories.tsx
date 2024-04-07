@@ -1,8 +1,8 @@
 import { Meta, StoryObj } from '@storybook/react';
 import { storybookControls, styleToken } from '../../styles';
 import { AppDisplay } from '../AppDisplay';
-import { VStack } from '../VStack/index.ts';
-import { Typography, TypographyVariants, typographyVariantStyle } from './Typography.tsx';
+import { VStack } from '../VStack';
+import { Typography, TypographyVariants, typographyVariantStyle } from './Typography';
 
 const meta: Meta<typeof Typography> = {
   title: 'Primitive/Typography',

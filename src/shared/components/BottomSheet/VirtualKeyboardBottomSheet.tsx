@@ -1,6 +1,6 @@
 import { styleToken } from '../../styles';
 import { Button } from '../Button';
-import { BottomSheet } from './BottomSheet.tsx';
+import { BottomSheet } from './BottomSheet';
 
 type ButtonValue = {
   value: string;

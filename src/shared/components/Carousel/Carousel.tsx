@@ -1,5 +1,5 @@
 import { ReactNode, useState } from 'react';
-import ArrowLeft from '../../../assets/arrow-left.svg?react';
+import ArrowLeft from '../../../assets/arrow-left.png';
 import { Box } from '../Box';
 import { Button } from '../Button';
 
@@ -55,7 +55,7 @@ export const Carousel = ({ items, onSelect }: CarouselProps) => {
               transform: 'translateY(-50%)',
             }}
           >
-            <ArrowLeft />
+            <img src={ArrowLeft} width="20px" height="20px" alt="이전 화면 아이콘" />
           </Button>
           <Button
             onClick={next}
@@ -69,7 +69,7 @@ export const Carousel = ({ items, onSelect }: CarouselProps) => {
             }}
           >
             <Box transform="rotate(180deg)">
-              <ArrowLeft />
+              <img src={ArrowLeft} width="20px" height="20px" alt="다음 화면 아이콘" />
             </Box>
           </Button>
         </>

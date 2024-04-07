@@ -1,6 +1,6 @@
 import { Meta, StoryObj } from '@storybook/react';
 import { AppDisplay } from '../AppDisplay';
-import { BottomSheet } from './BottomSheet.tsx';
+import { BottomSheet } from './BottomSheet';
 
 const meta: Meta<typeof BottomSheet> = {
   title: 'Components/BottomSheet',

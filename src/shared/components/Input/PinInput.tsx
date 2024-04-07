@@ -18,8 +18,8 @@ import { Label } from '../Label';
 import { useModal } from '../Overlay';
 import { TextField } from '../TextField';
 import { useInputFieldsValues, useInputRefs } from './hooks';
-import { INPUT_COLOR, INPUT_FONT_SIZE, INPUT_FONT_WEIGHT } from './Input.constant.ts';
-import { InputType, UpdateValueProps } from './Input.type.ts';
+import { INPUT_COLOR, INPUT_FONT_SIZE, INPUT_FONT_WEIGHT } from './Input.constant';
+import { InputType, UpdateValueProps } from './Input.type';
 import { findComponentsInChildren, isValidateInputValueByType, isValidInputRef } from './utils';
 
 type PinInputProps = PropsWithChildren<{

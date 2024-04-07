@@ -1,6 +1,6 @@
 import { FocusEvent, useEffect } from 'react';
-import ArrowLeft from '../../assets/arrow-left.svg?react';
-import Close from '../../assets/close.svg?react';
+import ArrowLeft from '../../assets/arrow-left.png';
+import Close from '../../assets/close.png';
 import {
   useFunnel,
   useInputValues,
@@ -160,7 +160,7 @@ export const CardAddForm = () => {
             padding="10px 0"
             onClick={goToPrev}
           >
-            <ArrowLeft />
+            <img src={ArrowLeft} width="20px" height="20px" alt="이전 화면 아이콘" />
             <Typography
               variant="title"
               color={styleToken.color.black}
@@ -171,7 +171,7 @@ export const CardAddForm = () => {
             </Typography>
           </Button>
           <Button variant="ghost" padding="0" onClick={moveCardPaymentForm}>
-            <Close width="32px" height="32px" />
+            <img src={Close} width="32px" height="32px" alt="닫기 아이콘" />
           </Button>
         </Flex>
       </AppDisplay.Header>

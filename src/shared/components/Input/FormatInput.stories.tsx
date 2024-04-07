@@ -3,7 +3,7 @@ import { styleToken } from '../../styles';
 import { isValidateMonthString } from '../../utils';
 import { AppDisplay } from '../AppDisplay';
 import { Typography } from '../Typography';
-import { FormatInput } from './FormatInput.tsx';
+import { FormatInput } from './FormatInput';
 
 const meta: Meta<typeof FormatInput> = {
   title: 'Components/FormatInput',

@@ -1,8 +1,8 @@
 import { useModal } from '../../../../shared';
-import { isValidateNumber } from '../../../../shared/utils/isValidateNumber.ts';
+import { isValidateNumber } from '../../../../shared/utils/isValidateNumber';
 import { PaymentForm } from '../../../types';
 import { isValidateCardState } from '../../../utils';
-import { CardPayments } from '../CardPayments.tsx';
+import { CardPayments } from '../CardPayments';
 
 const ERROR_CODES = {
   INVALID_CLIENT_ID: 'INVALID_CLIENT_ID',

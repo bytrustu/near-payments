@@ -1,7 +1,7 @@
 import { Meta, StoryObj } from '@storybook/react';
-import { AppDisplay } from '../AppDisplay/index.ts';
+import { AppDisplay } from '../AppDisplay';
 import { OverlayProvider } from '../Overlay';
-import { PinInput } from './PinInput.tsx';
+import { PinInput } from './PinInput';
 
 const meta: Meta<typeof PinInput> = {
   title: 'Components/PinInput',

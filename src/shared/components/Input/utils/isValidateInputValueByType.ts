@@ -1,4 +1,4 @@
-import { InputType } from '../Input.type.ts';
+import { InputType } from '../Input.type';
 
 const isAlphabetic = (value: string) => /^[a-zA-Z]*$/.test(value);
 const isAlphanumeric = (value: string) => /^[a-zA-Z0-9]*$/.test(value);
