@@ -1,0 +1,34 @@
+name: Chromatic Deployment
+
+on:
+  push:
+    branches:
+      - main
+      - bytrustu
+    paths:
+      - 'src/payments/components/**'
+      - 'src/shared/components/**'
+      - 'src/shared/styles/**'
+
+jobs:
+  chromatic-deployment:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+        with:
+          fetch-depth: 0
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: '20'
+
+      - name: Install Dependencies
+        run: yarn install
+
+      - name: Run Chromatic
+        uses: chromaui/action@v1
+        with:
+          token: ${{ secrets.NEXT_PAYMENTS_CHROMATIC_TOKEN }}
+          projectToken: ${{ secrets.NEXT_PAYMENTS_CHROMATIC_TOKEN }}
+          exitZeroOnChanges: true

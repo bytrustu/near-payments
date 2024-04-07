@@ -1,0 +1,113 @@
+{
+  "name": "near-payments",
+  "description": "Next Step NearPayments",
+  "version": "0.0.1",
+  "type": "module",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "browser": "./browser/specific/main.js",
+  "exports": {
+    ".": {
+      "import": "./dist/index.js",
+      "require": "./dist/index.js"
+    },
+    "./browser/specific/main.js": {
+      "import": "./browser/specific/main.js",
+      "require": "./browser/specific/main.js"
+    }
+  },
+  "keywords": [
+    "react",
+    "near-payments"
+  ],
+  "author": {
+    "name": "bytrustu",
+    "email": "bytrustu@gmail.com"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/bytrustu/near-payments.git"
+  },
+  "license": "MIT",
+  "scripts": {
+    "dev": "vite",
+    "build": "rm -rf dist && mkdir dist && tsc && vite build --config vite.lib.config.ts",
+    "publish": "yarn build",
+    "lint": "eslint src --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
+    "prettier:check": "prettier --check \"src/**/*.{ts,tsx}\"",
+    "prettier:write": "prettier --write \"src/**/*.{ts,tsx}\"",
+    "preview": "vite preview",
+    "storybook": "storybook dev -p 6006",
+    "build-storybook": "storybook build",
+    "chromatic": "npx chromatic --project-token=$NEXT_PAYMENTS_CHROMATIC_TOKEN",
+    "prepare": "rm -rf dist && mkdir dist && tsc"
+  },
+  "peerDependencies": {
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  },
+  "dependencies": {
+    "@emotion/react": "^11.11.4",
+    "@emotion/styled": "^11.11.0",
+    "@xstate/react": "^4.1.0",
+    "vite-plugin-dts": "^3.8.1",
+    "xstate": "^5.9.1"
+  },
+  "devDependencies": {
+    "@storybook/addon-essentials": "^7.6.17",
+    "@storybook/addon-interactions": "^7.6.17",
+    "@storybook/addon-links": "^7.6.17",
+    "@storybook/addon-onboarding": "^1.0.11",
+    "@storybook/blocks": "^7.6.17",
+    "@storybook/react": "^7.6.17",
+    "@storybook/react-vite": "^7.6.17",
+    "@storybook/test": "^7.6.17",
+    "@testing-library/jest-dom": "^6.4.2",
+    "@testing-library/react": "^14.2.1",
+    "@testing-library/user-event": "^14.5.2",
+    "@trivago/prettier-plugin-sort-imports": "^4.3.0",
+    "@types/node": "^20.11.20",
+    "@types/react": "^18.2.55",
+    "@types/react-dom": "^18.2.19",
+    "@typescript-eslint/eslint-plugin": "^7.1.0",
+    "@typescript-eslint/parser": "^7.1.0",
+    "@vitejs/plugin-react": "^4.2.1",
+    "chromatic": "^11.0.0",
+    "eslint": "^8.57.0",
+    "eslint-config-airbnb": "^19.0.4",
+    "eslint-config-prettier": "^9.1.0",
+    "eslint-plugin-import": "^2.29.1",
+    "eslint-plugin-jest": "^27.2.1",
+    "eslint-plugin-jsx-a11y": "^6.7.1",
+    "eslint-plugin-react": "^7.32.2",
+    "eslint-plugin-react-hooks": "^4.6.0",
+    "eslint-plugin-react-refresh": "^0.4.1",
+    "eslint-plugin-storybook": "^0.8.0",
+    "eslint-plugin-unused-imports": "^3.1.0",
+    "husky": "^8.0.3",
+    "jsdom": "^24.0.0",
+    "prettier": "^3.2.5",
+    "storybook": "^7.6.17",
+    "typescript": "^5.2.2",
+    "vite": "^5.1.0",
+    "vite-plugin-svgr": "^4.2.0"
+  },
+  "lint-staged": {
+    "*.{ts,tsx}": [
+      "yarn lint",
+      "yarn prettier:check"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  }
+}
