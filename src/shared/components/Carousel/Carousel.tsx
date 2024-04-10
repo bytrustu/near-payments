@@ -1,5 +1,5 @@
 import { ReactNode, useState } from 'react';
-import ArrowLeft from '../../../assets/arrow-left.png';
+import ArrowLeft from 'src/assets/arrow-left.png';
 import { Box } from '../Box';
 import { Button } from '../Button';
 

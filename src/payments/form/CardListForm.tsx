@@ -1,4 +1,4 @@
-import Close from '../../assets/close.png';
+import Close from 'src/assets/close.png';
 import { AppDisplay, Button, Flex, HStack, Typography, useFunnel, VStack } from '../../shared';
 import { CardDisplay } from '../components/CardDisplay';
 import { CardPageIndex } from '../constants';

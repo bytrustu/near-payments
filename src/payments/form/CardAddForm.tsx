@@ -1,6 +1,6 @@
 import { FocusEvent, useEffect } from 'react';
-import ArrowLeft from '../../assets/arrow-left.png';
-import Close from '../../assets/close.png';
+import ArrowLeft from 'src/assets/arrow-left.png';
+import Close from 'src/assets/close.png';
 import {
   useFunnel,
   useInputValues,
