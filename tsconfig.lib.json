@@ -1,0 +1,12 @@
+{
+  "extends": "./tsconfig.json",
+  "compilerOptions": {
+    "outDir": "./dist",
+    "declaration": true,
+    "module": "ESNext",
+    "target": "es6",
+    "jsx": "react-jsx"
+  },
+  "include": ["src/index.ts", "src/payments", "src/shared", "src/custom.d.ts"],
+  "exclude": ["node_modules", "vite.config.ts", "src/**/*.stories.tsx"]
+}
