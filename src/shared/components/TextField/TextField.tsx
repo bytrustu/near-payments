@@ -57,6 +57,10 @@ const Root = styled(DefaultStyled)<TextFieldProps>`
     ${({ variant }) => variant && isValidVariantNoneOutline(variant) && `outline: none;`};
     outline: ${({ _focus }) => _focus?.outline};
   }
+
+  &[type="password"] {
+    font-family: Arial, sans-serif;
+  }
 `;
 
 export const TextField = forwardRef<HTMLInputElement, TextFieldProps>(
